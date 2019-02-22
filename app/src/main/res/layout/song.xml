@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shadow_show"
+    android:padding="10dp">
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/imageView"
+            android:background="@drawable/rand"/>
+
+
+            <TextView
+                android:id="@+id/song_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="hello"
+                android:textSize="15dp"
+                android:textColor="#FFFFFFA9"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_alignRight="@+id/song_artist"
+                android:layout_alignEnd="@+id/song_artist" />
+
+            <TextView
+                android:id="@+id/song_artist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="hello123"
+                android:padding="5dp"
+                android:textSize="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:layout_alignBottom="@+id/imageView"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_toLeftOf="@+id/song_duration"
+                android:layout_toStartOf="@+id/song_duration" />
+
+            <TextView
+                android:id="@+id/song_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="1.30"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textSize="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignBottom="@+id/song_artist"
+                android:layout_alignParentTop="true" />
+
+
+        </RelativeLayout>
+
+
+
+
+</LinearLayout>

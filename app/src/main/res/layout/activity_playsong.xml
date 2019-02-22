@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff9665f4"
+    tools:context="com.bittu.meghna.singingstars.Playsong">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/uper_shadow"
+        android:id="@+id/playmusiclayout"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="hello"
+            android:textSize="15dp"
+            android:textColor="#FFFFFFA9"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toLeftOf="@+id/playid"
+            android:layout_toStartOf="@+id/playid" />
+
+        <TextView
+            android:id="@+id/song_artist"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FFF"
+            android:text="hello123"
+            android:padding="5dp"
+            android:textSize="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/playid"
+            android:layout_toStartOf="@+id/playid" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/playmusic"
+            android:background="#7605f4"
+            android:layout_alignParentRight="true"
+
+            android:layout_alignParentEnd="true"
+            android:id="@+id/playid"
+            android:layout_alignBottom="@+id/song_artist" />
+
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="400dp"
+    android:layout_below="@+id/playmusiclayout"
+    android:layout_above="@+id/seekBar">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/imageView2"
+        android:src="@drawable/prakhar"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffd399ff"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout2">
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/previous"
+            android:padding="15dp"
+            android:background="#ffd399ff"/>
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/playmusic"
+            android:background="@drawable/play_music"
+            android:paddingLeft="15dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="15dp"/>
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffd399ff"
+            android:src="@drawable/next"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:background="#ffd399ff"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_alignEnd="@+id/linearLayout2" />
+
+
+</RelativeLayout>

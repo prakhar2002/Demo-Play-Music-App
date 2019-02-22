@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/shadow_show"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/artistimg"
+        android:scaleType="centerCrop"
+        android:background="@drawable/prakhar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/artisttext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:background="#ff9665f4"
+        android:text="hello"
+        android:textSize="15dp"
+        android:textColor="#FFFFFFA9"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/artistimg"
+        android:layout_alignLeft="@+id/artistimg"
+        android:layout_alignStart="@+id/artistimg"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
+
+</LinearLayout>
